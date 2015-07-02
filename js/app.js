@@ -26,15 +26,15 @@ $(document).ready(function() {
             $(".ryu-throwing").hide();
             $(".ryu-ready").show();
     });
-    $("body").keydown(function(event){
+    $(document).keydown(function(event){
         if(event.keyCode == 88) {
-            $(".ryu").hide();
+            $(".ryu-still").hide();
             $(".ryu-cool").show();
         }
     });
-    $("body").keyup(function(){
+    $(document).keyup(function(){
         $(".ryu-cool").hide();
-        $(".ryu").show();
+        $(".ryu-still").show();
     });
 });
 
