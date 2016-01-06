@@ -1,49 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  background-color: black;
+	line-height: 1;
 }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+body {
+	background-color: black;
+}
+
 .main {
-  background-color: white;
-  margin-top: 110px;
-  padding-left: 100px;
-  min-width: 1200px;
-  height: 500px;
-  position: relative;
-  z-index: 1;
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 550px;
 }
+
+.hadouken, .ruy-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	background-repeat: no-repeat;
+}
+
 .ryu {
-    width: 659px;
-    height: 494px;
+	float: left;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
-  width: 659px;
-  height: 494px;
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	width: 659px;
+	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
-  display: none;
-} 
+.ryu-ready, .ryu-throwing, .ryu-cool {
+	display: none;
+}
 
 .ryu-ready {
-  background-image: url('../images/ryu-ready-position.gif');
+	background-image: url("../images/ryu-ready-position.gif");
 }
 
 .ryu-still {
-  background-image: url('../images/ryu-standing-still.png');
+	background-image: url("../images/ryu-standing-still.png");
 }
 
 .ryu-throwing {
-  background-image: url('../images/ryu-throwing-hadouken.png');
+	background-image: url("../images/ryu-throwing-hadouken.png");
 }
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
-  background-repeat: no-repeat;
+
+.ryu-cool {
+	background-image: url("../images/ryu-cool.gif");
+	float: left;
 }
+
 .hadouken {
-  background-image: url('../images/hadouken.gif');
-  width: 156px; 
-  height: 90px;
-  display: none;
-  float: left;
-  position: absolute;
-  z-index: 10;
+	background-image: url("../images/hadouken.gif");
+	width: 156px;
+	height: 90px;
+	display: none;
+	position: relative;
+	top: 176px;
+	left: -160px;
+	float: left;
+}
+
+.logo {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+}
+
+.instructions {
+	display: block;
+	position: relative;
+	top: 200px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
 }
